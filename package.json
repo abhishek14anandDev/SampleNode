@@ -1,0 +1,22 @@
+{
+  "name": "sampleweb",
+  "version": "1.0.0",
+  "description": "This is a sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishek14anandDev/SampleNode.git"
+  },
+  "author": "Abhishek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhishek14anandDev/SampleNode/issues"
+  },
+  "homepage": "https://github.com/abhishek14anandDev/SampleNode#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
