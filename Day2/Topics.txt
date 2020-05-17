@@ -1,0 +1,8 @@
+Callbacks--
+Promises
+Observables
+
+Reading file using Callbacks 
+    -fs(File System)
+        -Readfile
+        -ReadfileAsync
