@@ -6,6 +6,15 @@ const usersRouter = require('./routes/users')
 
 const app = express()
 
+//this is used for Auth check for all api
+const dunnyMiddleware = (req,res,next)=>{
+    console.log('Inside dummy middleware')
+
+    next()
+}
+
+app.use(dunnyMiddleware)
+
 app.use((logger('dev')))
 
 app.use('/tasks',tasksRouter)
