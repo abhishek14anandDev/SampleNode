@@ -1,5 +1,6 @@
 const express = require('express')
 const logger = require('morgan')
+const bodyParser =require('body-parser')
 
 const tasksRouter = require('./routes/tasks')
 const usersRouter = require('./routes/users')
@@ -16,6 +17,10 @@ const dunnyMiddleware = (req,res,next)=>{
 app.use(dunnyMiddleware)
 
 app.use((logger('dev')))
+
+//body parser  // used for POST calls
+app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.json())
 
 app.use('/tasks',tasksRouter)
 app.use('/',usersRouter)
