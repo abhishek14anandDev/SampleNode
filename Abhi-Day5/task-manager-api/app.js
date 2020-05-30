@@ -1,9 +1,20 @@
 const express = require('express')
 const logger = require('morgan')
 const bodyParser =require('body-parser')
+const mongoose = require('mongoose')
 
 const tasksRouter = require('./routes/tasks')
 const usersRouter = require('./routes/users')
+
+//Connect the mongoose
+mongoose.connect(
+    'mongodb+srv://devuser:abcd1234@cluster0-mlro7.mongodb.net/TaskManager?retryWrites=true&w=majority',
+    {
+        useNewUrlParser:true, //new technique of parsing the database url
+        useUnifiedTopology:true
+    },
+    ()=> console.log('DB Connected')
+)
 
 const app = express()
 
