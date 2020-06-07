@@ -1,0 +1,25 @@
+whar ps -a |grep node do?
+
+npm i -g pm2 will install globally
+
+pm2 start cluster-demo.js
+
+pm2 stop cluster-demo.js
+
+ps -A | grep node -- Linux
+
+tasklist | findstr node --- windows command
+
+fork spawn exec
+//https://www.youtube.com/playlist?list=PLhW3qG5bs-L99pQsZ74f-LC-tOEsBp2rK ---Docker
+
+describe()
+it()
+expect()/should()/assert()
+
+ // //"test": "echo \"Error: no test specified\" && exit 1"
+
+ //npm test -first
+
+
+ https://drive.google.com/drive/folders/1xTFfYFC6LmOtJyvnIMNk3Fi_RN4HQ4BX?usp=sharing
